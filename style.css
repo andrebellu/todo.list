@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* make a custon class */
+.custom-btn {
+    @apply p-2;
+
+    @apply text-white;
+    @apply bg-purple-500;
+    @apply cursor-pointer;
+    @apply rounded-lg;
+
+    @apply hover:bg-white;
+    @apply hover:text-black;
+    @apply transition duration-500 ease-in-out;
+}
+
+.custom-task {
+    @apply bg-purple-100;
+    @apply rounded-lg;
+    @apply p-3;
+    @apply text-purple-500;
+    @apply text-lg;
+    @apply shadow;
+    @apply mr-3;
+
+    @apply hover:bg-purple-200;
+    @apply transition duration-500 ease-in-out;
+
+    @apply flex;
+    @apply items-center;
+    @apply justify-center;
+    @apply grow;
+}
+
+.custom-task-done {
+    @apply bg-slate-100;
+    @apply rounded-lg;
+    @apply p-3;
+    @apply text-lg;
+    @apply shadow;
+    @apply mr-3;
+
+    @apply transition duration-500 ease-in-out;
+
+    @apply flex;
+    @apply items-center;
+    @apply justify-center;
+    @apply grow;
+
+    @apply text-slate-500;
+    @apply italic;
+    @apply line-through;
+}
+
+.custom-list-item {
+    @apply flex;
+    @apply flex-row;
+    @apply justify-center;
+    @apply items-center;
+}
